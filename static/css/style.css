@@ -1,0 +1,65 @@
+/* Ensured that the map and the body take up the full height of the viewport */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+/* Center-aligned the heading and paragraph, and set font properties */
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Added some margin, width, and a border to the map container */
+#map {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Styled for the legend added to the map */
+.info.legend {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.info.legend .label {
+  margin-bottom: 5px;
+}
+
+/* Responsive design to ensure the map and text adjust on smaller screens */
+@media (max-width: 600px) {
+  #map {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
